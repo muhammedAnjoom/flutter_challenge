@@ -110,10 +110,10 @@ void main() {
 //     stdout.writeln();
 //   }
 // 13. Write a program in C to make a pyramid pattern with numbers increased by 1.
-//    1 
-//   2 3 
-//  4 5 6 
-// 7 8 9 10 
+//    1
+//   2 3
+//  4 5 6
+// 7 8 9 10
 
 //   var k = 0;
 //   for (var i = 1; i <= 4; i++) {
@@ -142,5 +142,49 @@ void main() {
 //     }
 //     stdout.writeln();
 //   }
+// question
+//    *
+//   * *
+//  * * *
+// * * * *
+//  * * *
+//   * *
+//    *
+//   for (var i = 1; i <= 4; i++) {
+//     for (var j = 4; j >= i + 1; j--) {
+//       stdout.write(" ");
+//     }
+//     for (var k = 1; k <= i; k++) {
+//       stdout.write("* ");
+//     }
+//     stdout.writeln();
+//   }
+//   for (var i = 1; i <= 3; i++) {
+//     for (var j = 1; j <= i; j++) {
+//       stdout.write(" ");
+//     }
 
+//     for (var k = 3; k >= i; k--) {
+//       stdout.write("* ");
+//     }
+//     stdout.writeln();
+//   }
+var count=0;
+  for (var i = 1; i <= 4; i++) {
+    for (var j = 4; j >= i + 1; j--) {
+      stdout.write(" ");
+    }
+    for (var c = 1; c <= i; c++) {
+      if(c==1){
+        stdout.write("1 ");
+      }else if(c==i) {
+        stdout.write("1 ");
+      }else{
+       
+        stdout.write("$count ");
+      }
+    }
+     count+=1;
+    stdout.writeln();
+  }
 }
