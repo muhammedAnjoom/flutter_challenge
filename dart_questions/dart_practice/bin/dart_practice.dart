@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:dart_practice/dart_practice.dart' as dart_practice;
+import 'package:test/test.dart';
 
 void main() {
 //  1. Write a C program to compute the sum of the first 10 natural numbers.
@@ -169,22 +170,83 @@ void main() {
 //     }
 //     stdout.writeln();
 //   }
-var count=0;
-  for (var i = 1; i <= 4; i++) {
-    for (var j = 4; j >= i + 1; j--) {
-      stdout.write(" ");
-    }
-    for (var c = 1; c <= i; c++) {
-      if(c==1){
-        stdout.write("1 ");
-      }else if(c==i) {
-        stdout.write("1 ");
-      }else{
-       
-        stdout.write("$count ");
-      }
-    }
-     count+=1;
-    stdout.writeln();
+// var count=0;
+//   for (var i = 1; i <= 4; i++) {
+//     for (var j = 4; j >= i + 1; j--) {
+//       stdout.write(" ");
+//     }
+//     for (var c = 1; c <= i; c++) {
+//       if(c==1){
+//         stdout.write("1 ");
+//       }else if(c==i) {
+//         stdout.write("1 ");
+//       }else{
+
+//         stdout.write("$count ");
+//       }
+//     }
+//      count+=1;
+//     stdout.writeln();
+//   }
+
+// LIST
+
+  // var lists = [1, 4, 4, 8,];
+// lists[1]=0;
+// lists.shuffle();
+//  var map = lists.asMap();
+//  print(map[3]);
+// var num = lists.whereType<int>();
+// print(num);
+// var string = lists.whereType<String>();
+// print(string);
+  // var lis = lists.reduce( (i, j) {
+  //    return i+4;
+  // });
+  // print(lis);
+
+  // print(
+  //   lists
+  //       .followedBy(
+  //         ["a", "b"],
+  //       )
+  //       .toList()
+  //       .whereType<String>()
+  //       .join(" "),
+  // );
+  // print(lists.every((e) => e>=0));
+  // print(lists.take(2));
+//   var count =[3,53,5,3];
+//   var odd = [];
+//   var even = [];
+
+//   var list =lists+count;
+//   // list.sort((a,b)=> b.compareTo(a));
+//   for(var i=0;i<list.length;i++){
+//     if(list[i]%2==0){
+//       odd.add(list[i]);
+//       // print("odd number $");
+//     }else{
+//       even.add(list[i]);
+
+//     }
+//   }
+//  print(odd);
+//  even.insert(0, 2);
+//  print(even);
+
+  var names = {"ank", "ava", "ary"};
+  names.add("anjoom");
+  print(names.elementAt(names.length - 1));
+  if (names.contains("ank")) {
+    print("'found");
+    names.removeWhere((element) => element.startsWith("an"));
+  } else {
+    print("not found");
   }
+ Map<int,String> card_name ={
+  1:"ankop",
+  2:"ank"
+ };
+ print(card_name.entries);
 }
