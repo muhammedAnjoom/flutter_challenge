@@ -1,5 +1,6 @@
 
 
+import 'cars.dart';
 import 'person.dart';
 
 void main(List<String> arguments) {
@@ -10,7 +11,9 @@ void main(List<String> arguments) {
   final student = Student(age: 10,name: "anju",course: "bca");
   final student2 = Student(age: 20,name: "anu",course: "eng");
 
-  students.bcaStudent(course: student.course ?? " ");
+  final car  =  Car(make: "an",model: "abs");
+
+  student2.bcaStudent();
  
 
 }

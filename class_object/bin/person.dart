@@ -8,7 +8,7 @@ class Student {
     this.course
   });
 
-  Future<void> bcaStudent({String course="no course"})async{
+  Future<void> bcaStudent()async{
      if(course =="bca"){
       print("the student is bca $name");
     }else{
