@@ -52,17 +52,64 @@
 // }
 
 // equestion 2
+// void main() {
+//       tryVreatingPerson(age: 20);
+//     tryVreatingPerson(age: -1);
+//     tryVreatingPerson(age: 141);
+// }
+
+// void tryVreatingPerson({int age=0}){
+//   try{
+//     print(Person(age: age).age);
+//   }on InvalidAgeException catch (expection,stranckTrace){
+//     print(expection);
+//     // print(stranckTrace);
+//   }
+// }
+
+// class InvalidAgeException implements Exception {
+//   final int age;
+//   final String message;
+
+//   InvalidAgeException({required this.age, required this.message});
+//   @override
+//   String toString() => "InvalidAgeException $age,$message";
+// }
+
+// class Person {
+//   final int age;
+
+//   Person({required this.age}) {
+//     if (age < 0) {
+//       throw InvalidAgeException(
+//         age: age,
+//         message: "Age cannot be neagtive",
+//       );
+//     } else if (age > 140) {
+//       throw InvalidAgeException(
+//         age: age,
+//         message: "Age cannot be greater than 140",
+//       );
+//     }
+//   }
+// }
+
+// question 3
 void main() {
-      tryVreatingPerson(age: 20);
+  try {
+    tryVreatingPerson(age: 20);
     tryVreatingPerson(age: -1);
     tryVreatingPerson(age: 141);
+  } catch (e) {
+    print(e);
+  }
 }
 
-void tryVreatingPerson({int age=0}){
-  try{
+void tryVreatingPerson({int age = 0}) {
+  try {
     print(Person(age: age).age);
-  }on InvalidAgeException catch (expection,stranckTrace){
-    print(expection);
+  } on InvalidAgeException {
+    rethrow;
     // print(stranckTrace);
   }
 }
