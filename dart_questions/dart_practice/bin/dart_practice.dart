@@ -235,18 +235,51 @@ void main() {
 //  even.insert(0, 2);
 //  print(even);
 
-  var names = {"ank", "ava", "ary"};
-  names.add("anjoom");
-  print(names.elementAt(names.length - 1));
-  if (names.contains("ank")) {
-    print("'found");
-    names.removeWhere((element) => element.startsWith("an"));
-  } else {
-    print("not found");
+//   var names = {"ank", "ava", "ary"};
+//   names.add("anjoom");
+//   print(names.elementAt(names.length - 1));
+//   if (names.contains("ank")) {
+//     print("'found");
+//     names.removeWhere((element) => element.startsWith("an"));
+//   } else {
+//     print("not found");
+//   }
+//  Map<int,String> card_name ={
+//   1:"ankop",
+//   2:"ank"
+//  };
+//  print(card_name.entries);
+
+// swap the value
+  var arraryOne = [];
+  var arrayTwo = [];
+  var tempArr = [];
+  print("Enter the 5 number in array one");
+  for (var i = 0; i < 5; i++) {
+    var num = stdin.readLineSync();
+    arraryOne.add(num);
   }
- Map<int,String> card_name ={
-  1:"ankop",
-  2:"ank"
- };
- print(card_name.entries);
+  print(arraryOne);
+  print("Enter the 5 number in array two");
+  for (var i = 0; i < 5; i++) {
+    var num = stdin.readLineSync();
+    arrayTwo.add(num);
+  }
+  print(arrayTwo);
+  print("array after swapping");
+  for(var i=0;i<arraryOne.length;i++){
+    tempArr.add(arraryOne[i]);
+  }
+  arraryOne.clear();
+  print("emepty $tempArr");
+  for(var i=0;i<arrayTwo.length;i++){
+    arraryOne.insert(i, arrayTwo[i]);
+  }
+  arrayTwo.clear();
+  for(var i=0;i<tempArr.length;i++){
+    arrayTwo.insert(i, tempArr[i]);
+  }
+  // print(tempArr);
+  print("array 1: $arraryOne");
+  print("array 2: $arrayTwo");
 }
