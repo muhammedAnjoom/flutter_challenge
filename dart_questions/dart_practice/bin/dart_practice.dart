@@ -1,3 +1,4 @@
+import 'dart:ffi';
 import 'dart:io';
 
 import 'package:dart_practice/dart_practice.dart' as dart_practice;
@@ -251,35 +252,150 @@ void main() {
 //  print(card_name.entries);
 
 // swap the value
-  var arraryOne = [];
-  var arrayTwo = [];
-  var tempArr = [];
-  print("Enter the 5 number in array one");
-  for (var i = 0; i < 5; i++) {
-    var num = stdin.readLineSync();
-    arraryOne.add(num);
-  }
-  print(arraryOne);
-  print("Enter the 5 number in array two");
-  for (var i = 0; i < 5; i++) {
-    var num = stdin.readLineSync();
-    arrayTwo.add(num);
-  }
-  print(arrayTwo);
-  print("array after swapping");
-  for(var i=0;i<arraryOne.length;i++){
-    tempArr.add(arraryOne[i]);
-  }
-  arraryOne.clear();
-  print("emepty $tempArr");
-  for(var i=0;i<arrayTwo.length;i++){
-    arraryOne.insert(i, arrayTwo[i]);
-  }
-  arrayTwo.clear();
-  for(var i=0;i<tempArr.length;i++){
-    arrayTwo.insert(i, tempArr[i]);
-  }
-  // print(tempArr);
-  print("array 1: $arraryOne");
-  print("array 2: $arrayTwo");
+// 10. Write a program to interchange the values of two arrays.
+// a. Program should accept an array from the user, swap the values of two arrays and display it on the console
+// Eg: Output: Enter the size of arrays
+// Input: 5
+// Output: Enter the values of Array 1
+// Input: 10, 20, 30, 40, 50
+// Output: Enter the values of Array 2
+// Input: 15, 25, 35, 45, 55
+// Output: Arrays after swapping:
+// Array1: 15, 25, 35, 45, 55
+// Array2: 10, 20, 30, 40, 50
+
+  // var arraryOne = [];
+  // var arrayTwo = [];
+  // var tempArr = [];
+  // print("Enter the 5 number in array one");
+  // for (var i = 0; i < 5; i++) {
+  //   var num = stdin.readLineSync();
+  //   arraryOne.add(num);
+  // }
+  // print(arraryOne);
+  // print("Enter the 5 number in array two");
+  // for (var i = 0; i < 5; i++) {
+  //   var num = stdin.readLineSync();
+  //   arrayTwo.add(num);
+  // }
+  // print(arrayTwo);
+  // print("array after swapping");
+  // for(var i=0;i<arraryOne.length;i++){
+  //   tempArr.add(arraryOne[i]);
+  // }
+  // arraryOne.clear();
+  // for(var i=0;i<arrayTwo.length;i++){
+  //   arraryOne.insert(i, arrayTwo[i]);
+  // }
+  // arrayTwo.clear();
+  // for(var i=0;i<tempArr.length;i++){
+  //   arrayTwo.insert(i, tempArr[i]);
+  // }
+  // tempArr.clear();
+  // print("array 1: $arraryOne");
+  // print("array 2: $arrayTwo");
+
+// 11.  Write a program to find the number of even numbers in an array
+//  a. Program should accept an array and display the number of even numbers contained in that array
+// Eg: Output: Enter the size of an array
+// Input: 5
+// Output: Enter the values of array
+// Input: 11, 20, 34, 50, 33
+// Output: Number of even numbers in the given array is 3
+
+  // var list  = [11,20,34,50,33];
+  // var count =0;
+  // for(var i=0;i<list.length;i++){
+  //   if(list[i]%2==0){
+  //     count+=1;
+  //   }
+  // }
+  // print("Number of even numbers in the given list is $count");
+//     12.  Write a program to sort an array in descending order
+//     a. Program should accept and array, sort the array values in descending order and display it
+// Eg: Output: Enter the size of an array
+// Input: 5
+// Output: Enter the values of array
+// Input: 20, 10, 50, 30, 40
+// Output: Sorted array:
+// 50, 40, 30, 20, 10
+  // var list = [20, 10, 50, 30, 40];
+  // list.sort();
+  // print("sorted array: $list");
+
+//  13. Write a program to identify whether a string is a palindrome or not
+//   a. A string is a palindrome if it reads the same backward or forward eg: MALAYALAM
+// Program should accept a string and display whether the string is a palindrome or not
+// Eg: Output: Enter a string
+// Input: MALAYALAM
+// Output: Entered string is a palindrome
+// Eg 2: Output: Enter a string
+// Input: HELLO
+// Output: Entered string is not a palindrome
+
+//   print("enter a string");
+//   String? orignal = stdin.readLineSync();
+//   var revers = orignal!.split('').reversed.join('');
+//   if(orignal==revers){
+//     print("Enter String is palindrome");
+//   }else{
+//     print("Enter String not a palindorme");
+//   }
+// 14. Write a program to add to two dimensional arrays
+// a. Program should accept two 2D arrays and display its sum
+// Eg: Output: Enter the size of arrays
+// Input: 3
+// Output: Enter the values of array 1
+// Input: 
+// 1 2 3
+// 4 5 6
+// 7 8 9
+// Output: Enter the values of array 2
+// Input:
+// 10 20 30
+// 40 50 60
+// 70 80 90
+// Output: Sum of 2 arrays is:
+// 11 22 33
+// 44 55 66
+// 77 88 99
+
+//   var listOne = List.generate(
+//     3,
+//     (i) => List.filled(3, 0, growable: false),
+//     growable: false,
+//   );
+//   print("Enter a array 1");
+//   for (var i = 0; i < 3; i++) {
+//     for (var j = 0; j < 3; j++) {
+//       var value = stdin.readLineSync();
+//       listOne[i][j] = int.parse(value!);
+//     }
+//   }
+//   var listTwo = List.generate(
+//     3,
+//     (i) => List.filled(3, 0, growable: false),
+//     growable: false,
+//   );
+//   print("Enter a array 2");
+//   for (var i = 0; i < 3; i++) {
+//     for (var j = 0; j < 3; j++) {
+//       var value = stdin.readLineSync();
+//       listTwo[i][j] = int.parse(value!);
+//     }
+//   }
+//   var sumList = List.generate(
+//     3,
+//     (i) => List.filled(3, 0, growable: false),
+//     growable: false,
+//   );
+//   for (var i = 0; i < 3; i++) {
+//     for (var j = 0; j < 3; j++) {
+//       var value = listOne[i][j] + listTwo[i][j];
+//       sumList[i][j] = value;
+//     }
+//   }
+
+//   print("Sum of 2 array is:");
+//   print(sumList);
 }
