@@ -346,7 +346,7 @@ void main() {
 // Eg: Output: Enter the size of arrays
 // Input: 3
 // Output: Enter the values of array 1
-// Input: 
+// Input:
 // 1 2 3
 // 4 5 6
 // 7 8 9
@@ -398,4 +398,37 @@ void main() {
 
 //   print("Sum of 2 array is:");
 //   print(sumList);
+
+// question 15
+  // var list = [];
+  // var result = getList(list: list);
+  // displayList(list: result);
+
+  
 }
+//15.   Write a program to accept an array and display it on the console using functions
+//a. Program should contain 3 functions including main() function
+// main1()
+//1. Declare an array
+//2. Call function getArray()
+//3. Call function displayArray()
+//getArray()
+//1. Get values to the array
+//displayArray()
+//1. Display the array values
+
+// List? getList({List? list}) {
+//   print("Enter the value");
+//   for (var i = 0; i < 3; i++) {
+//     var value = stdin.readLineSync();
+//     list!.add(value);
+//   }
+//   return list;
+// }
+
+// void displayList({required  list}) {
+//   print("dispaly array");
+//   list.forEach((element) {
+//     print(element);
+//   });
+// }
