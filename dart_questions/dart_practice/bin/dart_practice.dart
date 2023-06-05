@@ -404,7 +404,27 @@ void main() {
   // var result = getList(list: list);
   // displayList(list: result);
 
-  
+// 16. Write a program to check whether a given number is prime or not
+// a. Program should accept an input from the user and display whether the number is prime or not
+// Eg: Output: Enter a number
+// Input: 7
+// Output: Entered number is a Prime number
+
+//    var num = 2;
+//    var m=num/2;
+//    var flag=0;
+//    for(var i=2;i<=m;i++){
+//     if(num%i==0){
+//       flag=1;
+    
+//     }
+//    }
+//   if(flag==0 && num!=1){
+//     print("number is prime");
+//   }else{
+//       print("Number is not prime");
+//   }
+
 }
 //15.   Write a program to accept an array and display it on the console using functions
 //a. Program should contain 3 functions including main() function
