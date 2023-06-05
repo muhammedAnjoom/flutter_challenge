@@ -416,7 +416,7 @@ void main() {
 //    for(var i=2;i<=m;i++){
 //     if(num%i==0){
 //       flag=1;
-    
+
 //     }
 //    }
 //   if(flag==0 && num!=1){
@@ -425,6 +425,33 @@ void main() {
 //       print("Number is not prime");
 //   }
 
+  // 17.  Write a menu driven program to do the basic mathematical operations such as addition, subtraction, multiplication and division (hint: use if else ladder or switch)
+  // a. Program should have 4 functions named addition(), subtraction(), multiplication() and division()
+  //  b. Should create a class object and call the appropriate function as user prefers in the main function
+   
+  // print("Enter two number");
+  // final num1 = int.parse(stdin.readLineSync()!);
+  // final num2 = int.parse(stdin.readLineSync()!);
+  // final math = Mathemateical(num1: num1, num2: num2);
+  // print("chose one");
+  // print("1.addtion\n2.subtraction \n3.multiplication\n4.divsion");
+  // final value = int.parse(stdin.readLineSync()!);
+  // switch (value) {
+  //   case 1:
+  //     print(math.addition());
+  //     break;i
+  //   case 2:
+  //     print(math.subtraction());
+  //     break;
+  //   case 3:
+  //     print(math.multplication());
+  //     break;
+  //   case 4:
+  //     print(math.divison());
+  //     break;
+  //   default:
+  //     print("worng number");
+  // }
 }
 //15.   Write a program to accept an array and display it on the console using functions
 //a. Program should contain 3 functions including main() function
@@ -451,4 +478,27 @@ void main() {
 //   list.forEach((element) {
 //     print(element);
 //   });
+// }
+
+// question 17
+// class Mathemateical {
+//   int num1;
+//   int num2;
+//   Mathemateical({required this.num1, required this.num2});
+
+//   int addition() {
+//     return num1 + num2;
+//   }
+
+//   int subtraction() {
+//     return num1 - num2;
+//   }
+
+//   int multplication() {
+//     return num1 * num2;
+//   }
+
+//   double divison() {
+//     return num1 / num2;
+//   }
 // }
