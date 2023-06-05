@@ -428,7 +428,7 @@ void main() {
   // 17.  Write a menu driven program to do the basic mathematical operations such as addition, subtraction, multiplication and division (hint: use if else ladder or switch)
   // a. Program should have 4 functions named addition(), subtraction(), multiplication() and division()
   //  b. Should create a class object and call the appropriate function as user prefers in the main function
-   
+
   // print("Enter two number");
   // final num1 = int.parse(stdin.readLineSync()!);
   // final num2 = int.parse(stdin.readLineSync()!);
@@ -452,6 +452,75 @@ void main() {
   //   default:
   //     print("worng number");
   // }
+
+// 18. Grades are computed using a weighted average. Suppose that the written test counts 70%,  lab exams 20% and assignments 10%.
+// If Arun has a score of
+// Written test = 81
+// Lab exams = 68
+// Assignments = 92
+// Arun’s overall grade = (81x70)/100 + (68x20)/100 + (92x10)/100 = 79.5
+//  Write a program to find the grade of a student during his academic year. 
+// a. Program should accept the scores for written test, lab exams and assignments
+// b. Output the grade of a student (using weighted average)
+// Eg:
+// Enter the marks scored by the students
+// Written test = 55
+// Lab exams = 73
+// Assignments = 87
+// Grade of the student is 61.8 
+
+//   print("Enter the Marks scored by the students");
+//   print("Written test = ");
+//   int wrtitenTest = int.parse(stdin.readLineSync()!);
+//   print("Lab exam = ");
+//   int lapExam = int.parse(stdin.readLineSync()!);
+//   print("Assignments = ");
+//   int assMark = int.parse(stdin.readLineSync()!);
+//   var result =
+//       (wrtitenTest * 70) / 100 + (lapExam * 20) / 100 + (assMark * 10) / 100;
+//   print("Grade of the Student is $result");
+
+// 19. Write a program to find out the income tax amount of a person.
+//     a. Program should accept annual income of a person
+// Output the amount of tax he has to pay
+
+// Eg 1:
+// Enter the annual income
+// 495000
+// Income tax amount = 24750.00
+
+// Eg 2:
+// Enter the annual income
+// 500000
+// Income tax amount = 25000.00
+// print("enter the annual income");
+// int income = int.parse(stdin.readLineSync()!);
+// print(income);
+// if(income>=250000 && income<= 500000){
+//   print("income tax amount = ${(income*5)/100}");
+// }else if(income>500000 && income<=1000000){
+//   print("income tax amount = ${(income*20)/100}");
+// }else if (income>1000000&&income<=5000000){
+//   print("income tax amount = ${(income*30)/100}");
+// }else{
+//   print("not tax");
+// }
+
+// 20. Write a program to print the following pattern using for loop
+// 1
+// 2	3
+// 4	5	6
+// 7	8	9	10
+
+
+// var count =1;
+// for(var i=0;i<4;i++){
+//   for(var j=0;j<=i;j++){
+//    stdout.write("$count  ");
+//     count++;
+//   }
+//   stdout.writeln();
+// } 
 }
 //15.   Write a program to accept an array and display it on the console using functions
 //a. Program should contain 3 functions including main() function
