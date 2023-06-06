@@ -459,7 +459,7 @@ void main() {
 // Lab exams = 68
 // Assignments = 92
 // Arun’s overall grade = (81x70)/100 + (68x20)/100 + (92x10)/100 = 79.5
-//  Write a program to find the grade of a student during his academic year. 
+//  Write a program to find the grade of a student during his academic year.
 // a. Program should accept the scores for written test, lab exams and assignments
 // b. Output the grade of a student (using weighted average)
 // Eg:
@@ -467,7 +467,7 @@ void main() {
 // Written test = 55
 // Lab exams = 73
 // Assignments = 87
-// Grade of the student is 61.8 
+// Grade of the student is 61.8
 
 //   print("Enter the Marks scored by the students");
 //   print("Written test = ");
@@ -512,7 +512,6 @@ void main() {
 // 4	5	6
 // 7	8	9	10
 
-
 // var count =1;
 // for(var i=0;i<4;i++){
 //   for(var j=0;j<=i;j++){
@@ -520,7 +519,33 @@ void main() {
 //     count++;
 //   }
 //   stdout.writeln();
-// } 
+// }
+
+// 21.  Write a program to multiply the adjacent values of an array and store it in an another array
+// a. Program should accept an array
+// b. Multiply the adjacent values
+// c. Store the result into another array
+// Eg:
+// Enter the array limit
+// 5
+// Enter the values of array
+// 1	2	3	4	5
+// Output
+// 2	6	12	20
+
+
+//   var listOne = [];
+//   var newList = [];
+//   print("enter the value of array");
+//   for (var i = 0; i < 5; i++) {
+//     int value = int.parse(stdin.readLineSync()!);
+//     listOne.add(value);
+//   }
+//   for (var i = 0; i < 4; i++) {
+//     var value = listOne[i] * listOne[i + 1];
+//     newList.add(value);
+//   }
+//   print(newList);
 }
 //15.   Write a program to accept an array and display it on the console using functions
 //a. Program should contain 3 functions including main() function
